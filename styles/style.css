@@ -91,6 +91,7 @@
   1px 0 var(--color-stroke), 
   0 -1px var(--color-stroke);
   mix-blend-mode: hard-light;
+  -webkit-text-stroke: 1px var(--color-stroke);
 }
 
 .card__block-text {
