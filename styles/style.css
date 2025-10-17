@@ -92,6 +92,7 @@
   0 -1px var(--color-stroke);
   mix-blend-mode: hard-light;
 }
+
 .card__block-text {
   display: flex;
   flex-direction: column;
@@ -107,7 +108,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 12px;
+  gap: 5px;
   margin-inline-end: 25px;
   margin-block-end: 26px;
 }
@@ -147,13 +148,23 @@
 .card__icon-button {
   display: flex;
   align-items: center;
+  border: 2px solid transparent;
   background-color: #fff;
-  block-size: 100%;
-  block-size: 38px;
-  inline-size: 38px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  max-block-size: 38px;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: #000;
 }
 
 .like-icon {
+  transform-origin: center;
   inline-size: 39px;
   block-size: 36px;
 }
@@ -232,6 +243,33 @@
   gap: 30px;
 }
 
+.filter-grayscale {
+  filter: grayscale(0.7);
+}
+
+.filter-saturate {
+  filter: saturate(350%);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(40deg);
+}
+
+.filter-invert {
+  filter: invert(100%) contrast(50%);
+}
+
+.filter-sepia {
+  filter: sepia(90%);
+}
+
+.filter-blur {
+  filter: blur(10px);
+}
+
+.filter-multiple {
+  filter: contrast(0.5) hue-rotate(100deg) blur(1px);;
+}
 
 @supports (text-stroke: 1px var(--color-stroke)) {
   .card__label {

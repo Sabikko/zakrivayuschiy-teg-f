@@ -15,4 +15,6 @@
   --padding-header-horizontal: clamp(14px, calc(-24.204px + 10.188vw), 122.5px);
   --color-stroke: #fff;
   --color-font: #fff;
+  --color-contour: #000;
+  --color-sparks: #ff0000;
 }
