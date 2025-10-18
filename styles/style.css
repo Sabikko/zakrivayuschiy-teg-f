@@ -91,7 +91,6 @@
   1px 0 var(--color-stroke), 
   0 -1px var(--color-stroke);
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 1px var(--color-stroke);
 }
 
 .card__block-text {
@@ -165,7 +164,6 @@
 }
 
 .like-icon {
-  transform-origin: center;
   inline-size: 39px;
   block-size: 36px;
 }
@@ -230,6 +228,7 @@
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .modal__button {
@@ -276,6 +275,7 @@
   .card__label {
     text-shadow: none;
     text-stroke: 1px var(--color-stroke);
+    -webkit-text-stroke: 1px var(--color-stroke);
   }
 }
 
